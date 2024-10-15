@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragul</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0cc513d47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-test">
+            <p>ML Engineer</p>
+            <h1>Hi, I'm <span>Ragul T</span>
+                <p>Junior ML intern at The Reciprocal Solution &
+                II year AIML Student at SNS college of technology.</p>
+             </h1>
+        </div>
+    </div>
+</div>
+<!---------about------------->
+<div id="about">
+    <div class="container">
+    <div class="row">
+              <div class="about-col-1">
+                <img src="C:\\Users\\tragu\\Downloads\\ragult.jpg">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">Career Objective</h1>
+                <p>  With a passion for AI exploration and
+                    strong academic background in machine
+                    learning engineering. I'm eager to contribute
+                    to the industry as a machine learning
+                    engineer through research and projects.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-content" id="skills">
+                    <ul>
+                        <li><span>Python</span></li>
+                        <li><span>Machine Learning</span></li>
+                        <li><span>Deep Learning</span></li>
+                        <li><span>Computer Vision</span></li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li>
+                            <span>Machine Learning Intern - The Reciprocal Solution</span>
+                            <br>
+                            <small>June 2023 - Present</small>
+                        </li>
+                        <li>
+                            <span>Student - SNS College of Technology</span>
+                            <br>
+                            <small>August 2021 - Present</small>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li>
+                            <span>II Year AIML - SNS College of Technology</span>
+                            <br>
+                            <small>2021 - Present</small>
+                        </li>
+                        <li>
+                            <span>Higher Secondary - XYZ School</span>
+                            <br>
+                            <small>2019 - 2021</small>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+<!---------services------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Machine Learning</h2>
+                <p>Development of Machine Learning models to solve real-world problems.</p>
+            </div>
+            <div>
+                <i class="fas fa-chart-line"></i>
+                <h2>Data Analysis</h2>
+                <p>Data collection, analysis, and visualization to derive meaningful insights.</p>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+                <h2>Web Development</h2>
+                <p>Design and development of responsive and functional websites.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="portfolio-list">
+            <div class="portfolio-item">
+                <img src="images-2/aitutar.webp" alt="">
+                <div class="portfolio-text">
+                    <h2>AI Tutor</h2>
+                    <p>AI-based personalized tutoring system.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images-2/rogul1.jpg" alt="">
+                <div class="portfolio-text">
+                    <h2>Project Rogul</h2>
+                    <p>Advanced data analysis tool for businesses.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images-2/sheep.png" alt="">
+                <div class="portfolio-text">
+                    <h2>Sheep Detection</h2>
+                    <p>Real-time sheep detection system using computer vision.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------contact------------->
+<div id="contact">
+    <div class="container">
+        <h1 class="sub-title">Contact Me</h1>
+        <form action="submit.php" method="POST">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+        </form>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>

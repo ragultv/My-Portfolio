@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragul</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0cc513d47.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#services">My Service</a></li>
+                <li><a href="#portfolio">My Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-test">
+            <p>ML Engineer</p>
+            <h1>Hi, I'm <span>Ragul T</span>
+                <p>Junior ML intern at The Reciprocal Solution &
+                II year AIML Student at SNS college of technology.</p>
+
+             </h1>
+        </div>
+    </div>
+</div>
+<!---------about------------->
+<div id="about">
+    <div class="container">
+    <div class="row">
+              <div class="about-col-1">
+                <img src="C:\Users\tragu\Downloads\Portfolio--main\Portfolio--main\Portfolio--main\images-2\rogul1.jpg">
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">Career Objective</h1>
+                <p>  With a passion for AI exploration and
+                    strong academic background in machine
+                    learning engineering. I'm eager to contribute
+                    to the industry as a machine learning
+                    engineer through research and projects.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming</span><br>Python and C</li>
+                        <li><span>Database</span><br> SQL (Learning)</li>
+                        <li><span>ML Frameworks</span><br>Pytorh and scikit learning</li>
+                        <li><span>Web Development</span><br>Html,Css,JavaScript</li>
+                        <li><span>DevOps Tool</span><br>Docker and Github</li>
+                        <li><span>Computer Vision Tools</span><br>OpenCV,Yolo,CNN,Mediapipe etc</li>
+                        <li><span>Python Web Framework</span><br>Flask and gradio</li>
+                        <li><span>API development</span><br>Flask for API creation and POSTMAN for Testing</li>
+                    </ul>
+                </div>
+            
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2020</span><br>SSLC - DSMHS School,perambalur.</li>
+                        <li><span>2021-2022</span><br>HSE - DSMHS School,perambalur.</li>
+                        <li><span>2022-currently</span><br>AIML - SNSCT, coimbatore.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>ML Internship at Congnifyz Technologies -<span>Mar 2024-Apr 2024<br></span></li>
+                        <li>ML Internship at The Reciprocal Solutions -<span>Jul 2024-sep 2024<br></span></li>
+                        <li>GenAI Internship at Skillible and AICTE -<span>Jul 2024-Aug 2024<br></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!---------services------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>AI Projects</h2>
+                <p>Artificial Intelligence projects involve creating algorithms and systems that can mimic human intelligence,
+                     enabling machines to perform tasks like natural language processing, image recognition, and decision-making.</p>
+                <a href="https://github.com/ragultv/AI-projects" onclick="openModal('ai')">Visit</a>
+            
+            </div>
+
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>ML Projects</h2>
+                <p>Machine Learning projects focus on developing algorithms that allow computers to learn from and 
+                    make predictions or decisions based on data, without explicit programming. It encompasses areas like classification, regression, and clustering.</p>
+                <a href="https://github.com/ragultv/ML-projects"onclick="openModal('ml')">Visit</a>
+            </div>
+
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>DL Projects</h2>
+                <p>Deep Learning projects leverage neural networks with multiple layers to learn representations of data, enabling tasks such as speech recognition, 
+                    image and video analysis, and autonomous driving, among others.</p>
+                <a href="https://github.com/ragultv/DL-projects" onclick="openModal('dl')">Visit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!---------portfolio------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="C:\Users\tragu\Downloads\Portfolio--main\Portfolio--main\Portfolio--main\images-2\sheep.png">
+                <div class="layer">
+                    <h3>ANIMAL DETECTION IN FARMLAND</h3>
+                    <p>This is Animal detection project,
+                         we use opencv technology that detects the animal in the farmland using SSD algorithm by camera and make siren to alert the farm owner and threaten the animal by the siren.</p>
+                    <a href="https://github.com/ragultv/ANIMAL-DETECTION.git"><i class="fa-solid fa-link"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="C:\Users\tragu\Downloads\Portfolio--main\Portfolio--main\Portfolio--main\images-2\nanotrack.png">
+                <div class="layer">
+                    <h3> NANOTRACK</h3>
+                    <p>NanoTrack is a lightweight object detection and tracking package designed for use with YOLO. It provides efficient tracking algorithms with minimal resource requirements.</p>
+                    <a href="https://github.com/ragultv/NanoTrack.git"><i class="fa-solid fa-link"></i></a>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images-2/work-3.png">
+                <div class="layer">
+                    <h3>SMART FACE ATTENDANCE SYSTEM</h3>
+                    <p>which helps to take attendance in the classroom </p>
+                    <p>comming soon...</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!---------contact form------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                 <p> <i class="fa-solid fa-paper-plane"></i> tragulragul@gmail.com</p>
+                 <p> <i class="fa-solid fa-phone-volume"></i> 8838868452</p>
+                <div class="social-icons">
+                    <a href="https://github.com/ragultv"><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/ragul-t-?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="C:\Users\tragu\Downloads\ragul new resume.pdf" download class="btn btn2">Download my resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-sharp fa-solid fa-copyright"></i> ragul@2024</p>
+    </div>
+    
+</div>
+
+
+
+<script>
+
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+
+</script>
+
+
+<script>
+    var sidemenu=document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    } 
+</script>
+
+<script>
+    const form = document.forms['submit-to-email'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        // Replace with your email address
+        const email = "tragulragul@gmail.com";
+        
+        // Construct email subject and body
+        const subject = encodeURIComponent("Contact Form Submission");
+        const body = encodeURIComponent(`Name: ${form.elements['Name'].value}\nEmail: ${form.elements['email'].value}\n\nMessage:\n${form.elements['Message'].value}`);
+
+        // Construct mailto URL
+        const mailtoURL = `mailto:${email}?subject=${subject}&body=${body}`;
+
+        // Open default mail client with prefilled data
+        window.open(mailtoURL);
+
+        // Reset form and display success message
+        form.reset();
+        msg.innerHTML = "Message Sent Successfully";
+        setTimeout(function () {
+            msg.innerHTML = "contact us";
+        }, 5000);
+    });
+</script>
+
+
+</body>
+</html>
